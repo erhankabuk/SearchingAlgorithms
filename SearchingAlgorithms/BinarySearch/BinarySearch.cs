@@ -8,7 +8,7 @@ namespace SearchingAlgorithms.BinarySearch
 {
     public class BinarySearch
     {
-        //iterative implementation
+        //Iterative Implementation
         public static int BinarySearchAlgorithm(int[] sequence, int input)
         {
             int leftIndex = 0, rightIndex = sequence.Length - 1;
@@ -26,6 +26,22 @@ namespace SearchingAlgorithms.BinarySearch
 
             return -1;
         }
+        /*
+
+        //Recursive Implementation
+        public static int BinarySearchAlgorithm(int[] sequence, int input, int leftIndex, int rightIndex)
+        {
+            if (rightIndex >= leftIndex)
+            {
+                int middle = leftIndex + (rightIndex - leftIndex) / 2;
+                if (sequence[middle] == input) return middle;
+                else if (sequence[middle] > input) return BinarySearchAlgorithm(sequence, input, leftIndex, middle - 1);
+                else if (sequence[middle] < input) return BinarySearchAlgorithm(sequence, input, middle + 1, rightIndex);
+            }
+            return -1;
+        }
+        */
+
 
         public static void BinarySearchIterativeTest(int[] sequence, int input)
         {
