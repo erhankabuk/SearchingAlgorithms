@@ -20,8 +20,8 @@
 # Sorting Algorithms
 
 ### Selection Sort
+* O(Log n) time complexity.
 * Find minimun value and put it in beginning
-* 
 
 
 
