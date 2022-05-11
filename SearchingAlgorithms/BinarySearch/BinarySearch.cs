@@ -11,6 +11,9 @@ namespace SearchingAlgorithms.BinarySearch
         //Iterative Implementation
         public static int BinarySearchAlgorithm(int[] sequence, int input)
         {
+            //Sort array
+            Array.Sort(sequence);
+
             int leftIndex = 0, rightIndex = sequence.Length - 1;
 
             while (leftIndex <= rightIndex)
@@ -31,6 +34,8 @@ namespace SearchingAlgorithms.BinarySearch
         //Recursive Implementation
         public static int BinarySearchAlgorithm(int[] sequence, int input, int leftIndex, int rightIndex)
         {
+            //Sort array
+            Array.Sort(sequence);
             if (rightIndex >= leftIndex)
             {
                 int middle = leftIndex + (rightIndex - leftIndex) / 2;
@@ -45,8 +50,7 @@ namespace SearchingAlgorithms.BinarySearch
 
         public static void BinarySearchIterativeTest(int[] sequence, int input)
         {
-            //Sort array
-            Array.Sort(sequence);
+
 
             int result = BinarySearchAlgorithm(sequence, input);
 
