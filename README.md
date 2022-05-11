@@ -17,7 +17,11 @@
 * Using for sorted data types.
 * Find index of a value in sorted array with jumpin in blocks as square of length.
 
+# Sorting Algorithms
 
+### Selection Sort
+* Find minimun value and put it in beginning
+* 
 
 
 
