@@ -10,6 +10,9 @@ namespace SearchingAlgorithms.JumpSearch
     {
         public static int JumpSearchAlgorithm(int[] sequence, int input)
         {
+            //Sort array
+            Array.Sort(sequence);
+          
             int length = sequence.Length;
             int jump = (int)Math.Floor(Math.Sqrt(length));
             int previous = sequence[0];
@@ -38,8 +41,6 @@ namespace SearchingAlgorithms.JumpSearch
         }
         public static void JumpSearchTest(int[] sequence, int input)
         {
-            //Sort array
-            Array.Sort(sequence);
 
             int result = JumpSearchAlgorithm(sequence, input);
 
