@@ -11,8 +11,11 @@
 * Using for sorted data types.
 * Find index of a value in sorted array with comparing mid value and searching value .
 
-
-
+### Jump Search
+* Similar approach with Binary Search.
+* O(Log n) time complexity.
+* Using for sorted data types.
+* Find index of a value in sorted array with jumpin in blocks as square of length.
 
 
 
